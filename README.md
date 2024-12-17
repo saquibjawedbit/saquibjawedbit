@@ -9,7 +9,6 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=saquibjawedbit&label=Profile%20views&color=0e75b6&style=flat" alt="saquibjawedbit" /> </p>
 
