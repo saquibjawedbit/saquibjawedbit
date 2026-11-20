@@ -12,8 +12,6 @@
   <a href="https://codeforces.com/profile/saquibjawed"><img src="https://img.shields.io/badge/Codeforces-Specialist_1504-1f8acb?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"/></a>
 </p>
 
-> 🟢 **Open to part-time and contract work** on backend, AI-agent and security tooling. The fastest way to reach me is [LinkedIn](https://linkedin.com/in/mdsaquibjawed).
-
 ---
 
 ### 💼 Experience
@@ -42,10 +40,15 @@
 | **Pydantic** | [Always pop field name and model type stacks during schema generation](https://github.com/pydantic/pydantic/pull/13859) | ✅ Merged |
 | **Microsoft Agent Framework** | [Support `knowledge_source_params` in the Azure AI Search context provider](https://github.com/microsoft/agent-framework/pull/8673) | ✅ Merged |
 | **Microsoft Agent Framework** | [Keep null fields out of Azure DocumentDB membership filters](https://github.com/microsoft/agent-framework/pull/8654) | ✅ Merged |
-| **CrewAI** | [Handle non-dict and null values in kickoff task output storage](https://github.com/crewAIInc/crewAI/pull/7750) | 🔍 In review |
-| **Agno** | [Stop coercing "true"/"false"/"null" strings for string-typed tool parameters](https://github.com/agno-agi/agno/pull/10487) | 🔍 In review |
-| **Agno** | [Keep Gemini function responses separate from following user text](https://github.com/agno-agi/agno/pull/10485) | 🔍 In review |
-| **Agno** | [Make `session_id` optional in `Step.get_chat_history`](https://github.com/agno-agi/agno/pull/10483) | 🔍 In review |
+| **NVIDIA NeMo Agent Toolkit** | [Fetch every page of tools from paginated MCP servers](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2614) | ✅ Merged |
+| **AWS Powertools for Lambda** | [Keep string log messages that are valid JSON scalars as strings](https://github.com/aws-powertools/powertools-lambda-python/pull/8838) | ✅ Merged |
+| **AWS Powertools for Lambda** | [Ignore a malformed SSM decrypt setting instead of crashing](https://github.com/aws-powertools/powertools-lambda-python/pull/8839) | ✅ Merged |
+| **A2A Protocol (Python SDK)** | [Honor the client call timeout in the v0.3 gRPC client](https://github.com/a2aproject/a2a-python/pull/1497) | ✅ Merged |
+| **A2A Protocol (Python SDK)** | [Percent-encode ids in the v0.3 REST push-config delete path](https://github.com/a2aproject/a2a-python/pull/1486) | ✅ Merged |
+| **A2A Protocol (Python SDK)** | [Return `result: null` for v0.3 push-config delete](https://github.com/a2aproject/a2a-python/pull/1481) | ✅ Merged |
+| **Microsoft PyRIT** | [Keep combining marks inside words masked by the SATA converter](https://github.com/microsoft/PyRIT/pull/4390) | ✅ Merged |
+
+Also in review: fixes in **MLflow**, **Docling**, **LiveKit Agents**, **Microsoft Agent Governance Toolkit**, **PyRIT** and **A2A** · [all my PRs](https://github.com/search?q=author%3Asaquibjawedbit+is%3Apr+-user%3Asaquibjawedbit+-user%3Aping-browser&type=pullrequests)
 
 ---
 
