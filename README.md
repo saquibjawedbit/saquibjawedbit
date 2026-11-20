@@ -35,20 +35,17 @@
 
 ### 🌍 Open source
 
-| Project | Contribution | Status |
-|---|---|---|
-| **Pydantic** | [Always pop field name and model type stacks during schema generation](https://github.com/pydantic/pydantic/pull/13859) | ✅ Merged |
-| **Microsoft Agent Framework** | [Support `knowledge_source_params` in the Azure AI Search context provider](https://github.com/microsoft/agent-framework/pull/8673) | ✅ Merged |
-| **Microsoft Agent Framework** | [Keep null fields out of Azure DocumentDB membership filters](https://github.com/microsoft/agent-framework/pull/8654) | ✅ Merged |
-| **NVIDIA NeMo Agent Toolkit** | [Fetch every page of tools from paginated MCP servers](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2614) | ✅ Merged |
-| **AWS Powertools for Lambda** | [Keep string log messages that are valid JSON scalars as strings](https://github.com/aws-powertools/powertools-lambda-python/pull/8838) | ✅ Merged |
-| **AWS Powertools for Lambda** | [Ignore a malformed SSM decrypt setting instead of crashing](https://github.com/aws-powertools/powertools-lambda-python/pull/8839) | ✅ Merged |
-| **A2A Protocol (Python SDK)** | [Honor the client call timeout in the v0.3 gRPC client](https://github.com/a2aproject/a2a-python/pull/1497) | ✅ Merged |
-| **A2A Protocol (Python SDK)** | [Percent-encode ids in the v0.3 REST push-config delete path](https://github.com/a2aproject/a2a-python/pull/1486) | ✅ Merged |
-| **A2A Protocol (Python SDK)** | [Return `result: null` for v0.3 push-config delete](https://github.com/a2aproject/a2a-python/pull/1481) | ✅ Merged |
-| **Microsoft PyRIT** | [Keep combining marks inside words masked by the SATA converter](https://github.com/microsoft/PyRIT/pull/4390) | ✅ Merged |
+**A2A Protocol** · Linux Foundation · 26k stars · the agent-to-agent standard started by Google: Fixed three bugs in the Python SDK's v0.3 compatibility layer, the path older agents use to talk to new ones. The gRPC client ignored per-call timeouts, so a slow agent could hang a caller forever; push-notification deletes broke on IDs with special characters; and the JSON-RPC delete returned the wrong response shape. Each fix ships with a failing-first regression test. · [#1497](https://github.com/a2aproject/a2a-python/pull/1497) [#1486](https://github.com/a2aproject/a2a-python/pull/1486) [#1481](https://github.com/a2aproject/a2a-python/pull/1481)
 
-Also in review: fixes in **MLflow**, **Docling**, **LiveKit Agents**, **Microsoft Agent Governance Toolkit**, **PyRIT** and **A2A** · [all my PRs](https://github.com/search?q=author%3Asaquibjawedbit+is%3Apr+-user%3Asaquibjawedbit+-user%3Aping-browser&type=pullrequests)
+**Pydantic** · 29k stars · Python's most widely used data validation library: Fixed schema generation so that an error partway through no longer leaves stale internal state behind and corrupts the next schema built in the same process. · [#13859](https://github.com/pydantic/pydantic/pull/13859)
+
+**AWS Powertools for Lambda** · AWS's official toolkit for serverless Python: Stopped the Logger from silently turning string messages like `"123"` or `"true"` into numbers and booleans, and made the Parameters utility fall back safely instead of crashing every invocation on a malformed setting. · [#8838](https://github.com/aws-powertools/powertools-lambda-python/pull/8838) [#8839](https://github.com/aws-powertools/powertools-lambda-python/pull/8839)
+
+**NVIDIA NeMo Agent Toolkit** · NVIDIA's framework for building and profiling AI agents: The MCP client read only the first page of tools from paginated servers and silently dropped the rest. Agents now see every tool the server offers. · [#2614](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2614)
+
+**Microsoft PyRIT** · 5k stars · Microsoft's AI red-teaming framework: Fixed the SATA masking attack so words with accents and combining marks (Hindi, Vietnamese and more) are masked whole instead of being split mid-character. · [#4390](https://github.com/microsoft/PyRIT/pull/4390)
+
+Also in review: fixes in **MLflow**, **Docling**, **LiveKit Agents** and **Microsoft Agent Governance Toolkit**.
 
 ---
 
